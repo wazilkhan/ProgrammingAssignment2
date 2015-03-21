@@ -20,9 +20,12 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Write a short comment describing this function 
 
-cachesolve <- function(x, ...) {
+## function checks inverse is already stored via getinv() 
+## it computes inverse if result is a null and then store it via setinv()
+
+cacheSolve <- function(x, ...) {
         m <- x$getinv()
         if(!is.null(m)) {
                 message("getting cached data")
