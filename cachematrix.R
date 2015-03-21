@@ -4,6 +4,7 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
+## similar to cachemean function
         m <- NULL
         set <- function(y) {
                 x <<- y
@@ -13,8 +14,8 @@ makeCacheMatrix <- function(x = matrix()) {
         setinv <- function(solve) m <<- solve
         getinv <- function() m
         list(set = set, get = get,
-             setmean = setinv,
-             getmean = getinv)
+             setinv = setinv,
+             getinv = getinv)
 }
 
 
